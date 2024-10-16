@@ -161,7 +161,7 @@ def send_data(url):
         
             total = round(end_time - start_time, 2)
                     
-            print(f"[{B}{args.proxy.upper()}{E}] | {M}{args.url}{E} : returned response_code -> {response.status_code} | ms {C}{total}{E} | ")
+            print(f"[{B}{args.method.upper()}{E}] | {M}{args.url}{E} : returned response_code -> {response.status_code} | ms {C}{total}{E} | ")
             args.timeout -= 1
             time.sleep(args.sleep)
             
